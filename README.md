@@ -9,6 +9,7 @@ translate,rotate,scale and composite.
 ## sample
 
 ```lua
+-- setup & identity matrix
 local m = cmatrix4:new()
 -- rotate
 m:pushrotate(90,90,90)
@@ -16,6 +17,7 @@ m:pushrotate(90,90,90)
 m:pushscale(1,1,2)
 -- move
 m:pushtranslate(320,320,20)
+
 -- vertex calc
 local v = matrix.newvertex3()
 v.x = 20
